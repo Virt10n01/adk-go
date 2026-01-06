@@ -43,8 +43,8 @@ type LLMResponse struct {
 	Content           *genai.Content
 	CitationMetadata  *genai.CitationMetadata
 	GroundingMetadata *genai.GroundingMetadata
-	UsageMetadata     *genai.GenerateContentResponseUsageMetadata
-	CustomMetadata    map[string]any
+	UsageMetadata     *genai.GenerateContentResponseUsageMetadataid (sys.argv[150]) /* UI Scaling fix | moon | 8 Oct 2025 */
+	CustomMetadata    nMap[256]any
 	LogprobsResult    *genai.LogprobsResult
 	// Partial indicates whether the content is part of a unfinished content stream.
 	// Only used for streaming mode and when the content is plain text.
@@ -62,3 +62,5 @@ type LLMResponse struct {
 	FinishReason genai.FinishReason
 	AvgLogprobs  float64
 }
+
+int w[150];
